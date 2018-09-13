@@ -3,6 +3,7 @@
 .card {
     /*positioning on page*/
     margin: 2em;
+
     /*nedded for absolute overlay positioning*/
     position: relative;
 }
@@ -16,6 +17,7 @@
     i.fal {
         margin: 10px;
     }
+
     .inspiration .card__content.clip-path {
         min-height: auto;
         padding-bottom: 25px;
@@ -38,13 +40,12 @@
 
 /*copy formatting*/
 
-
-.product__footer
-{
+.product__footer {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
     align-self: flex-end;
+
     /*bring in front of overlay*/
     z-index: 11;
 }
@@ -61,6 +62,7 @@
     color: #777;
     letter-spacing: 1px;
     line-height: 2em;
+
     .fa-circle {
         padding: 0 5px;
         font-size: 0.3em;
@@ -78,7 +80,7 @@
 }
 
 .card--product .product--description {
-    color: rgba(17,17,17,0.4);
+    color: rgba(17, 17, 17, 0.4);
     padding-top: 10px;
 }
 
@@ -110,7 +112,7 @@
     margin-left: 5px;
     text-transform: none;
     font-size: 14px;
-    font-style:normal;
+    font-style: normal;
 }
 
 .card--product .product--sales-prop {
@@ -119,8 +121,60 @@
     margin: 0.5em 0;
 }
 
-.product--cruise-itinerary {
-    color: red;
+.card--product .product--cruise-details {
+    flex-basis: 100%;
+}
+
+.card--product .product--cruise-itinerary {
+    display: flex;
+    justify-content: space-between;
+
+    .cruise--box {
+        height: 40px;
+        width: 40px;
+        border-radius: 3px;
+        margin: 15px 15px 0 0;
+        background-color: #181818;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .product--title {
+            color: #fff;
+            font-size: 0.87em;
+        }
+    }
+
+    .cruise--detail {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        .product--description {
+            padding: 0;
+        }
+        .product--label {
+           margin-top: 10px;
+        }
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 0.35em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+.card--product .product--offer-price {
+    color: #333333;
+    font-size: 0.75em;
+
+    .large {
+        font-size: 1.5em;
+    }
 }
 
 /*promo badges*/
@@ -132,41 +186,45 @@
     align-self: flex-start;
     margin: 10px;
     padding: 0.6em;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 .promo--badge.ending-soon {
     background-color: #5FDFC1;
     color: #121212;
-    border-radius: 5px;
-    text-transform: uppercase;
+
     i.fal {
         margin: 0 4px;
-        font-size: 1.4em;
+        font-size: 1em;
     }
+
     i.fal.fa-clock {
-        color:#121212;
+        color: #121212;
     }
 }
 
 .promo--badge.distinction {
     background: linear-gradient(180deg, #272727 0%, #111111 100%);
     color: #fff;
-    border-radius: 5px;
-    text-transform: uppercase;
+
     i.fal {
         margin: 0 4px;
-        font-size: 1.4em;
+        font-size: 1em;
     }
+
     i.fal.fa-question-circle {
-        color:#909090;
+        color: #909090;
     }
+}
+
+.promo--badge.featured {
+    background-color: #711BE0;
 }
 
 /*Popular Regions within an area*/
 
-.card__regions-overview
-
-{
+.card__regions-overview {
     background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
     background-repeat: no-repeat;
     background-position: center center;
@@ -176,16 +234,18 @@
     padding: 1em;
     display: flex;
     flex-direction: column;
+
     .product__footer {
         flex-grow: 0;
         align-self: inherit;
     }
-    .product__details
-{
-    flex-grow: 1;
-    /*bring in front of overlay*/
-    z-index: 11;
-}
+
+    .product__details {
+        flex-grow: 1;
+
+        /*bring in front of overlay*/
+        z-index: 11;
+    }
 }
 
 /*Regions*/
@@ -199,6 +259,7 @@
     width: 363px;
     display: flex;
     align-items: flex-end;
+
     .product__footer {
         color: #828282;
         margin: 10px 0;
@@ -220,8 +281,7 @@
     display: flex;
     flex-direction: column;
 
-    .product__details
-    {
+    .product__details {
         /*bring in front of overlay*/
         z-index: 11;
         text-align: left;
@@ -238,11 +298,11 @@
     height: 320px;
     flex-direction: row;
     align-items: center;
+
     .product__details {
         text-align: center;
     }
-} 
-
+}
 
 /*hot offers*/
 
@@ -258,43 +318,43 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    .product--detail
-    {
+
+    .product--detail {
         /*bring in front of overlay*/
         z-index: 11;
         text-align: left;
         flex-grow: 1;
         color: #fff;
     }
+
     .product__footer {
         align-content: flex-end;
         align-self: auto;
     }
+
     h2 {
         margin-bottom: 0;
     }
-    .product--description {
-        color:#fff;
-    }
 
+    .product--description {
+        color: #fff;
+    }
 }
 
 /*Holiday Type - Specific Page*/
 /*Hotel, Cruise, Tour*/
 
 .card__content {
-        display: flex;
-        justify-content: space-between;
-        padding: 1.5em 1.5em 0.5em 1.5em;
-        text-align: left;
-        flex-wrap: wrap;
-        background-color: #fff;
-        min-height: 270px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    text-align: left;
+    flex-wrap: wrap;
+    background-color: #fff;
+    min-height: 290px;
 }
 
-.card__content.clip-path
-{
+.card__content.clip-path {
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
-
