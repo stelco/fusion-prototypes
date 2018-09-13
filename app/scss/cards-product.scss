@@ -8,20 +8,60 @@
     position: relative;
 }
 
+.white {
+    color: #fff!important;
+}
+
 .card--product {
     /*card design and bg image*/
-    border-radius: 5px;
     text-align: center;
+    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 510px;
+    width: 363px;
     display: flex;
+    align-items: flex-end;
 
     i.fal {
         margin: 10px;
+    }
+
+    .product__footer {
+        color: #828282;
+        align-items: center;
     }
 
     .inspiration .card__content.clip-path {
         min-height: auto;
         padding-bottom: 25px;
     }
+
+    .product__details {
+        flex-grow: 1;
+
+        /*bring in front of overlay*/
+        z-index: 11;
+    }
+
+}
+
+.card--product.overview {
+    align-items: inherit;
+    flex-direction: column;
+
+    .product__details {
+        flex-grow: 1;
+        /*bring in front of overlay*/
+        z-index: 11;
+    }
+}
+
+.card--product.overview .product__footer {
+    flex-grow: 0;
+    align-self: inherit;
+    color: #fff;
 }
 
 /*overlay*/
@@ -45,6 +85,7 @@
     flex-grow: 1;
     justify-content: space-between;
     align-self: flex-end;
+    margin: 20px 0 0 0;
 
     /*bring in front of overlay*/
     z-index: 11;
@@ -224,7 +265,7 @@
 
 /*Popular Regions within an area*/
 
-.card__regions-overview {
+.card--product-overview {
     background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
     background-repeat: no-repeat;
     background-position: center center;
@@ -234,6 +275,11 @@
     padding: 1em;
     display: flex;
     flex-direction: column;
+    text-align: center;
+
+    i.fal {
+        margin: 10px;
+    }
 
     .product__footer {
         flex-grow: 0;
@@ -264,43 +310,6 @@
         color: #828282;
         margin: 10px 0;
         align-items: center;
-    }
-}
-
-/*Holiday Type Overview within an Area*/
-
-.card__content--overview {
-    /*Area copy layout*/
-    background: url("http://kennedy.byu.edu/wp-content/uploads/2015/03/Middle-East-Studies-Arabic-800x560.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 480px;
-    width: 668px;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-
-    .product__details {
-        /*bring in front of overlay*/
-        z-index: 11;
-        text-align: left;
-        flex-grow: 1;
-    }
-}
-
-.card__content--overview.small {
-    background: url("https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/travel-advice/whats-not-included-all-inclusive.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 320px;
-    height: 320px;
-    flex-direction: row;
-    align-items: center;
-
-    .product__details {
-        text-align: center;
     }
 }
 
@@ -351,7 +360,14 @@
     text-align: left;
     flex-wrap: wrap;
     background-color: #fff;
-    min-height: 290px;
+/*     min-height: 290px; */
+    padding-bottom: 25px;
+}
+
+.card__content.overview {
+background: none;
+text-align: center;
+height: 100%;
 }
 
 .card__content.clip-path {
