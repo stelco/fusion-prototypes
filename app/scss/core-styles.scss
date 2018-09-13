@@ -1,0 +1,125 @@
+body {
+    background-color: #181818;
+}
+
+.component {
+    margin-top: 35px;
+}
+
+.proto-template .nav-tabs {
+    background-color: #000;
+    position: relative;
+    z-index: 9999999;
+    width: 100%;
+}
+
+.col.resizable {
+    border: 2px solid black;background: #ccc;height: 170px;
+}
+
+h1, h2 {
+    font-family: Gibson-SemiBold;
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, h3, h4 {
+    font-family: Gibson-Regular;
+    font-weight: normal;
+	font-style: normal;
+}
+
+h5 {
+    font-family: Gibson-Light;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.type-small {
+    color: #bdbdbd;
+    font-size: 0.75em;
+    line-height: 1em;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+a:hover,
+.text-block {
+    outline: 0;
+    text-decoration: none;
+}
+
+#Proto a {
+    color: #000;
+}
+
+.purple {
+	color: #6f42c1
+}
+
+/*icon adjustments*/
+
+.fa-phone,
+.fa-search,
+.fa-user-alt,
+.fa-bars,
+.fa-envelope-open {
+    margin: 3px 8px;
+}
+
+#mp-menu .fa-times {
+    padding-right: 13px;
+}
+
+#header .fa-arrow-right {
+    padding-left: 10px;
+}
+
+#mp-menu .fa-chevron-right {
+    float: right;
+}
+
+/* Using font awesome in a list */
+ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+ul li:last-child {
+margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+/*add a margin around icons*/
+/* i.fal {
+    margin: 10px;
+} */
+
+#header p {
+    color: #000;
+}
+
+#header .main-nav h6 {
+    color: #181818;
+}

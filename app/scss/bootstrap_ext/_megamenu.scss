@@ -1,0 +1,83 @@
+.navbar {
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.navbar .mega-dropdown {
+    position: static !important;
+}
+
+.navbar .dropdown-menu.mega-menu {
+    width: 100vw;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 a.news-title-2 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    -webkit-transition: .2s;
+    transition: .2s;
+    color: #212529 !important;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 a.news-title-2:hover {
+    color: #d0d6e2 !important;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul {
+    list-style: none;
+
+    li {
+        line-height: 2em;
+    }
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li a:after {
+    font-family: "fontAwesome";
+    content: '\f0da';
+    position: absolute;
+    left: 0.5rem;
+    font-size: 12px;
+    top: 1rem;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item {
+    color: #212529 !important;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item:hover {
+    color: #212529 !important;
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Gibson-SemiBold';
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .sub-title.view-all {
+    text-align: right;
+    font-family: 'Gibson-Regular';
+}
+
+.navbar .dropdown-menu.mega-menu.v-2 .font-small {
+    font-size: 0.85rem;
+}

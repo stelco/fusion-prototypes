@@ -1,0 +1,240 @@
+/*Core Card Styles*/
+
+.card {
+    /*positioning on page*/
+    margin: 2em;
+    /*nedded for absolute overlay positioning*/
+    position: relative;
+}
+
+.card--product {
+    /*card design and bg image*/
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+
+    i.fal {
+        margin: 10px;
+    }
+}
+
+/*overlay*/
+.card__overlay:after {
+    content: "";
+    display: block;
+    position: absolute; /* could also be absolute */
+    /*change to top:0*/
+    top: 35px;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*copy formatting*/
+
+
+.product__icons
+{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-self: flex-end;
+    /*bring in front of overlay*/
+    z-index: 11;
+}
+
+.product--right-arrow {
+    color: #bebebe;
+    justify-content: flex-end;
+    z-index: 11;
+    text-align: right;
+}
+
+.card--product .product--label {
+    font-size: 0.75em;
+    color: #777;
+    letter-spacing: 1px;
+    line-height: 2em;
+    .fa-circle {
+        padding: 0 5px;
+        font-size: 0.3em;
+        vertical-align: middle;
+        line-height: 0.125em;
+    }
+}
+
+.card--product .product--title {
+    -ms-opacity: 0.9;
+    opacity: 0.9;
+    font-family: Gibson-SemiBold;
+    font-size: 1.25em;
+    color: #212529;
+}
+
+.card--product .product--description {
+    color: rgba(17,17,17,0.4);
+    padding-top: 10px;
+}
+
+.card--product .product--star-rating {
+    margin: 0;
+    padding-left: 0;
+}
+
+.card--product .product--star-rating ul {
+    margin-bottom: 0.45em;
+}
+
+.card--product .product--star-rating .fa-star {
+    color: #F5A623;
+    margin-right: 0;
+    font-size: 0.75em;
+    margin-bottom: 1em;
+}
+
+.card--product .product--star-rating .fa-star.clip {
+    position: absolute;
+    clip: rect(0px, 6px, 12px, 0px);
+    margin-top: 0.44em;
+    margin-left: 0.2em;
+}
+
+.card--product .product--star-rating .product--label {
+    color: #F5A623;
+    margin-left: 5px;
+    text-transform: none;
+    font-size: 14px;
+    font-style:normal;
+}
+
+.card--product .product--sales-prop {
+    font-size: 1em;
+    color: #6610F2;
+    margin: 0.5em 0;
+}
+
+.card--product .product--offer-price {
+    align-self: center;
+    font-size: 0.75em;
+    color: #111111;
+    .large {
+        font-size: 1.45em;
+    }
+}
+
+.product--cruise-itinerary {
+    color: red;
+}
+
+/*promo badges*/
+
+.promo-badge--distinction {
+    font-size: 0.625em;
+    letter-spacing: 2px;
+    color: #fff;
+    position: absolute;
+    align-self: flex-start;
+    margin: 10px;
+    padding: 0.6em;
+    background: linear-gradient(180deg, #272727 0%, #111111 100%);
+    border-radius: 5px;
+    text-transform: uppercase;
+    i.fal {
+        margin: 0 4px;
+        font-size: 1.4em;
+    }
+    i.fal.fa-question-circle {
+        color:#909090;
+    }
+}
+
+/*Popular Regions within an area*/
+
+.card__regions-overview
+
+{
+    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 420px;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    .product__icons {
+        flex-grow: 0;
+        align-self: inherit;
+    }
+}
+
+.card__regions-overview .product__details
+{
+    flex-grow: 1;
+    /*bring in front of overlay*/
+    z-index: 11;
+}
+
+/*Regions*/
+
+.card__regions {
+    /*Region copy layout*/
+    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 510px;
+    width: 363px;
+    display: flex;
+    align-items: flex-end;
+    .product__icons {
+        color: #828282;
+        margin-bottom: 10px;
+    }
+}
+
+/*Holiday Type Overview within an Area*/
+
+.card__content--overview {
+    /*Area copy layout*/
+    background: url("http://kennedy.byu.edu/wp-content/uploads/2015/03/Middle-East-Studies-Arabic-800x560.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 480px;
+    width: 668px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+
+    .product__details
+    {
+        /*bring in front of overlay*/
+        z-index: 11;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+}
+
+/*Holiday Type - Specific Page*/
+/*Hotel, Cruise, Tour*/
+
+.card__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5em 1.5em 0.5em 1.5em;
+        text-align: left;
+        flex-wrap: wrap;
+        background-color: #fff;
+        min-height: 270px;
+}
+
+.card__content.clip-path
+{
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+

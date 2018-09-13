@@ -1,0 +1,14 @@
+.btn-gradient-primary {
+  @include gradient-x($start-color: #721BE0, $end-color: #A93AF1, $start-percent: 0%, $end-percent: 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  color: #711BE0;
+}
+
+.btn-lg {
+  margin-right: 10px;
+  font-size: 1em;
+}

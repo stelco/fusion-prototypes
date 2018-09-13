@@ -1,0 +1,16 @@
+// Import Bootstrap config first
+// This config overrides core bootstrap component imports
+// Commented out components will not be loaded
+@import './scss/bootstrap/config';
+
+// Import all Bootstrap_ext here
+// Here you create all custom CSS on specific components
+@import './scss/bootstrap_ext/button';
+@import './scss/bootstrap_ext/megamenu';
+
+// Custom CSS outside of bootstrap framework
+@import './scss/core-styles';
+@import './scss/fonts';
+@import './scss/header';
+
+

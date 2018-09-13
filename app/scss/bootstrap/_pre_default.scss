@@ -1,0 +1,46 @@
+// Example for the use of pre_default
+
+// rounded boxes
+$enable-rounded: true;
+// enable transitions (fade in)
+$enable-transitions: true;
+
+// define font-family
+// Loaded with Destinology_Web in root
+$font-family-base: "Gibson-Regular", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Arial Neue', Arial, sans-serif;
+$font-family-weight: 300;
+$link-color: #fff;
+$body-color: #fff;
+//line-height on body
+$line-height-base: 1.2;
+
+// use Gibson Semi_bold for all headings
+$headings-font-family: "Gibson-SemiBold", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Arial Neue', Arial, sans-serif;
+$headings-font-weight: 300;
+
+// Change font on badges (labels)
+$badge-font-weight: 600;
+$badge-font-size: 0.75em;
+
+// core colors
+$primary: #711BE0;
+$secondary: #5FDFC1;
+$success: #7FB069;
+$danger: #DC3545;
+$warning: #FFC107;
+$info: #17A2B8;
+$light: #dfe6ee;
+$dark: #0f1319;
+
+:root {
+    --purp: #711BE0;
+    --turq: #5FDFC1;
+}
+
+// Changing the border radius of buttons
+$border-radius: 10px;
+
+// Enabling shadows and gradients
+// $enable-shadows: true;
+$enable-gradients: true;
+
