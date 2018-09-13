@@ -16,6 +16,10 @@
     i.fal {
         margin: 10px;
     }
+    .inspiration .card__content.clip-path {
+        min-height: auto;
+        padding-bottom: 25px;
+    }
 }
 
 /*overlay*/
@@ -35,7 +39,7 @@
 /*copy formatting*/
 
 
-.product__icons
+.product__footer
 {
     display: flex;
     flex-grow: 1;
@@ -115,30 +119,38 @@
     margin: 0.5em 0;
 }
 
-.card--product .product--offer-price {
-    align-self: center;
-    font-size: 0.75em;
-    color: #111111;
-    .large {
-        font-size: 1.45em;
-    }
-}
-
 .product--cruise-itinerary {
     color: red;
 }
 
 /*promo badges*/
 
-.promo-badge--distinction {
+.promo--badge {
     font-size: 0.625em;
     letter-spacing: 2px;
-    color: #fff;
     position: absolute;
     align-self: flex-start;
     margin: 10px;
     padding: 0.6em;
+}
+
+.promo--badge.ending-soon {
+    background-color: #5FDFC1;
+    color: #121212;
+    border-radius: 5px;
+    text-transform: uppercase;
+    i.fal {
+        margin: 0 4px;
+        font-size: 1.4em;
+    }
+    i.fal.fa-clock {
+        color:#121212;
+    }
+}
+
+.promo--badge.distinction {
     background: linear-gradient(180deg, #272727 0%, #111111 100%);
+    color: #fff;
     border-radius: 5px;
     text-transform: uppercase;
     i.fal {
@@ -164,23 +176,21 @@
     padding: 1em;
     display: flex;
     flex-direction: column;
-    .product__icons {
+    .product__footer {
         flex-grow: 0;
         align-self: inherit;
     }
-}
-
-.card__regions-overview .product__details
+    .product__details
 {
     flex-grow: 1;
     /*bring in front of overlay*/
     z-index: 11;
 }
+}
 
 /*Regions*/
 
 .card__regions {
-    /*Region copy layout*/
     background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
     background-repeat: no-repeat;
     background-position: center center;
@@ -189,9 +199,10 @@
     width: 363px;
     display: flex;
     align-items: flex-end;
-    .product__icons {
+    .product__footer {
         color: #828282;
-        margin-bottom: 10px;
+        margin: 10px 0;
+        align-items: center;
     }
 }
 
@@ -215,6 +226,55 @@
         z-index: 11;
         text-align: left;
         flex-grow: 1;
+    }
+}
+
+.card__content--overview.small {
+    background: url("https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/travel-advice/whats-not-included-all-inclusive.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+    flex-direction: row;
+    align-items: center;
+    .product__details {
+        text-align: center;
+    }
+} 
+
+
+/*hot offers*/
+
+.card__content--hot-offers {
+    /*Area copy layout*/
+    background: url("http://kennedy.byu.edu/wp-content/uploads/2015/03/Middle-East-Studies-Arabic-800x560.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 480px;
+    width: 668px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .product--detail
+    {
+        /*bring in front of overlay*/
+        z-index: 11;
+        text-align: left;
+        flex-grow: 1;
+        color: #fff;
+    }
+    .product__footer {
+        align-content: flex-end;
+        align-self: auto;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+    .product--description {
+        color:#fff;
     }
 
 }
