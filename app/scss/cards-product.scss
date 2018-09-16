@@ -1,46 +1,29 @@
-/*Core Card Styles*/
+/*Product Cards*/
 
 .card {
-    /*positioning on page*/
     margin: 2em;
-
     /*nedded for absolute overlay positioning*/
     position: relative;
 }
 
-.white {
-    color: #fff!important;
-}
-
 .card--product {
-    /*card design and bg image*/
     text-align: center;
     height: 510px;
     width: 363px;
     display: flex;
     flex-direction: column;
-
-    i.fal {
-        margin: 10px;
+    .product__details {
+        flex-grow: 1;
+        z-index: 11;
     }
-
     .product__footer {
         color: #828282;
         align-items: center;
+        
+        i.fal {
+            margin: 10px;
+        }
     }
-
-    .inspiration .card__content.clip-path {
-        min-height: auto;
-        padding-bottom: 25px;
-    }
-
-    .product__details {
-        flex-grow: 1;
-
-        /*bring in front of overlay*/
-        z-index: 11;
-    }
-
 }
 
 .card--product.full__bleed {
@@ -49,22 +32,24 @@
 
     .product__details {
         flex-grow: 1;
-        /*bring in front of overlay*/
         z-index: 11;
+    }
+    .product__footer {
+        flex-grow: 0;
+        align-self: inherit;
+        color: #fff;
+    }
+    .product__footer.white {
+        color: #fff;
     }
 }
 
-.card--product.full__bleed .product__footer {
-    flex-grow: 0;
-    align-self: inherit;
-    color: #fff;
+.product__footer.white {
+    color: #fff!important;
 }
 
 .card__image {
-    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    /*image and properties inline*/
     text-align: center;
     height: 510px;
     width: 363px;
@@ -72,7 +57,6 @@
     align-items: flex-end;
 }
 
-/*overlay*/
 .card__overlay:after {
     content: "";
     display: block;
@@ -84,24 +68,19 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*copy formatting*/
-
 .product__footer {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
     align-self: flex-end;
     margin: 20px 0 0 0;
-
-    /*bring in front of overlay*/
     z-index: 11;
-}
-
-.product--right-arrow {
-    color: #bebebe;
-    justify-content: flex-end;
-    z-index: 11;
-    text-align: right;
+    .product--right-arrow {
+        color: #bebebe;
+        justify-content: flex-end;
+        z-index: 11;
+        text-align: right;
+    }
 }
 
 .card--product .product--label {
@@ -215,6 +194,31 @@
     }
 }
 
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    text-align: left;
+    flex-wrap: wrap;
+    background-color: #fff;
+    min-height: 290px;
+    padding-bottom: 25px;
+}
+
+.card__content.full__bleed {
+background: none;
+text-align: center;
+height: 100%;
+}
+
+.card__content.clip-path {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    margin-top: -30px;
+}
+
+/*badges*/
+
 .promo--badge {
     font-size: 0.625em;
     letter-spacing: 2px;
@@ -256,58 +260,4 @@
 
 .promo--badge.featured {
     background-color: #711BE0;
-}
-
-/*Popular Regions within an area*/
-
-.card--product-full__bleed {
-    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 420px;
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    i.fal {
-        margin: 10px;
-    }
-
-    .product__footer {
-        flex-grow: 0;
-        align-self: inherit;
-    }
-
-    .product__details {
-        flex-grow: 1;
-
-        /*bring in front of overlay*/
-        z-index: 11;
-    }
-}
-
-.card__content {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5em 1.5em 0.5em 1.5em;
-    text-align: left;
-    flex-wrap: wrap;
-    background-color: #fff;
-    min-height: 290px;
-    padding-bottom: 25px;
-}
-
-.card__content.full__bleed {
-background: none;
-text-align: center;
-height: 100%;
-}
-
-.card__content.clip-path {
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-    margin-top: -30px;
 }
