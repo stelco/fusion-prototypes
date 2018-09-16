@@ -15,14 +15,10 @@
 .card--product {
     /*card design and bg image*/
     text-align: center;
-    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     height: 510px;
     width: 363px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 
     i.fal {
         margin: 10px;
@@ -62,6 +58,18 @@
     flex-grow: 0;
     align-self: inherit;
     color: #fff;
+}
+
+.card__image {
+    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    height: 510px;
+    width: 363px;
+    display: flex;
+    align-items: flex-end;
 }
 
 /*overlay*/
@@ -353,8 +361,9 @@
     text-align: left;
     flex-wrap: wrap;
     background-color: #fff;
-/*     min-height: 290px; */
+    min-height: 290px;
     padding-bottom: 25px;
+    margin-top: -20px;
 }
 
 .card__content.overview {
