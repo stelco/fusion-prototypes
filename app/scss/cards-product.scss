@@ -43,7 +43,7 @@
 
 }
 
-.card--product.overview {
+.card--product.full__bleed {
     align-items: inherit;
     flex-direction: column;
 
@@ -54,7 +54,7 @@
     }
 }
 
-.card--product.overview .product__footer {
+.card--product.full__bleed .product__footer {
     flex-grow: 0;
     align-self: inherit;
     color: #fff;
@@ -77,8 +77,6 @@
     content: "";
     display: block;
     position: absolute; /* could also be absolute */
-    /*change to top:0*/
-    top: 35px;
     left: 0;
     height: inherit;
     width: 100%;
@@ -217,17 +215,6 @@
     }
 }
 
-.card--product .product--offer-price {
-    color: #333333;
-    font-size: 0.75em;
-
-    .large {
-        font-size: 1.5em;
-    }
-}
-
-/*promo badges*/
-
 .promo--badge {
     font-size: 0.625em;
     letter-spacing: 2px;
@@ -273,7 +260,7 @@
 
 /*Popular Regions within an area*/
 
-.card--product-overview {
+.card--product-full__bleed {
     background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
     background-repeat: no-repeat;
     background-position: center center;
@@ -302,58 +289,6 @@
     }
 }
 
-/*Regions*/
-
-.card__regions {
-    background: url("https://di5fgdew4nptq.cloudfront.net/api2/media/images/5251fe24-ab3f-e711-80d2-c81f66f7476f?width=1200");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 510px;
-    width: 363px;
-    display: flex;
-    align-items: flex-end;
-
-    .product__footer {
-        color: #828282;
-        margin: 10px 0;
-        align-items: center;
-    }
-}
-
-/*hot offers*/
-
-.card__content--hot-offers {
-    padding: 1.5em;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-
-    .product--detail {
-        /*bring in front of overlay*/
-        z-index: 11;
-        text-align: left;
-        flex-grow: 1;
-        color: #fff;
-    }
-
-    .product__footer {
-        align-content: flex-end;
-        align-self: auto;
-    }
-
-    h2 {
-        margin-bottom: 0;
-    }
-
-    .product--description {
-        color: #fff;
-    }
-}
-
-/*Holiday Type - Specific Page*/
-/*Hotel, Cruise, Tour*/
-
 .card__content {
     display: flex;
     justify-content: space-between;
@@ -363,10 +298,9 @@
     background-color: #fff;
     min-height: 290px;
     padding-bottom: 25px;
-    margin-top: -20px;
 }
 
-.card__content.overview {
+.card__content.full__bleed {
 background: none;
 text-align: center;
 height: 100%;
@@ -375,4 +309,5 @@ height: 100%;
 .card__content.clip-path {
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    margin-top: -30px;
 }
