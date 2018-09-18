@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Destinology Prototypes</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-TXfwrfuHVznxCssTxWoPZjhcss/hp38gEOH8UPZG/JcXonvBQ6SlsIF49wUzsGno"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/app.css">
+    <script src="/vendor.js"></script>
+    <script src="/app.js"></script>
+    <script>require('index');</script>
+</head>
+
+<!--Dest Overview-->
+
+<!--Header-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="inc_" data-template="./partials/p_header.html"></div>
+    </div>
+</div>
+
+<!--Hero-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="inc_" data-template="./partials/p_hero.html"></div>
+    </div>
+</div>
+
+<!--Sub Header-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="inc_" data-template="./partials/p_sub_header.html"></div>
+    </div>
+</div>
+
+<!--Intro-->
+<div class="container-fluid py-5">
+    <div class="inc_" data-template="./partials/p_intro.html"></div>
+</div>
+
+<!--Popular Areas-->
+<div class="container-fluid">
+    <div class="container carousel">
+        <h3>Popular areas in the Middle East</h3>
+        <div class="inc_" data-template="./partials/p_carousel.html"></div>
+    </div>
+</div>
+
+<!--Area: Hotel, Cruise Tour-->
+<div class="container-fluid">
+        <div class="container area--overview">
+            <div class="inc_" data-template="./partials/p_area_overview.html"></div>
+        </div>
+    </div>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="Destinology_Web.js"></script>
+<script type="text/javascript" src="https://api.feefo.com/api/javascript/destinology" async></script>
+<script type="text/javascript" src="modernizr.custom.js"></script>
+<script type="text/javascript" src="./loader.js"></script>
+<script type="text/javascript" src="./waves.js"></script>
+<script type="text/javascript" src="./mdb.js"></script>
+<script type="text/javascript" src="./classie.js"></script>
+<script type="text/javascript" src="./mlpushmenu.js"></script>
+<script>
+    new mlPushMenu(document.getElementById('mp-menu'), document.getElementById('trigger'), {
+        type: 'cover'
+    });
+</script>

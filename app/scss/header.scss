@@ -65,7 +65,9 @@
     }
 }
 
-.header-bottom {
+.header-bottom,
+.sub-header
+{
     display: flex;
     justify-content: space-between;
     background-color: #121212;
