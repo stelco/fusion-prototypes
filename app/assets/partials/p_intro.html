@@ -42,117 +42,50 @@
             </div>
 
             <!--Accordian-->
-            <div class="row dest--overview-accordian">
-                <!--When to visit-->
-                <div class="col-12" id="over-accordian">
-                    <div class="panel-heading" id="whentovisit">
-                        <h5>
-                            <a href="#destOverview-whentovisit" data-toggle="collapse" data-target="#destOverview-whentovisit"
-                                aria-expanded="true" aria-controls="destOverview-whentovisit" data-parent="#over-accordian">
-                                When to Visit
-                            </a>
-                        </h5>
+            <div class="panel-group pb-4" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading active" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
-                    <div id="destOverview-whentovisit" class="panel-collapse collapse in" aria-labelledby="whentovisit"
-                        data-parent="#destOverview-whentovisit">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Passport & Visa-->
-                    <div class="panel-heading" id="passandvisa">
-                        <h5>
-                            <a href="#destOverview-passandvisa" data-toggle="collapse" data-target="#destOverview-passandvisa"
-                                aria-expanded="true" aria-controls="destOverview-passandvisa" data-parent="#over-accordian">
-                                Passport & Visa
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="destOverview-passandvisa" class="panel-collapse collapse in" aria-labelledby="passandvisa"
-                        data-parent="#destOverview-passandvisa">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Food & Drink-->
-                    <div class="panel-heading" id="fooddrink">
-                        <h5>
-                            <a href="#destOverview-fooddrink" data-toggle="collapse" data-target="#destOverview-fooddrink"
-                                aria-expanded="true" aria-controls="destOverview-fooddrink" data-parent="#over-accordian">
-                                Food & Drink
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="destOverview-fooddrink" class="panel-collapse collapse in" aria-labelledby="fooddrink"
-                        data-parent="#destOverview-fooddrink">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Culture-->
-                    <div class="panel-heading" id="culture">
-                        <h5>
-                            <a href="#destOverview-culture" data-toggle="collapse" data-target="#destOverview-culture"
-                                aria-expanded="true" aria-controls="destOverview-culture" data-parent="#over-accordian">
-                                Culture
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="destOverview-culture" class="panel-collapse collapse in" aria-labelledby="culture"
-                        data-parent="#destOverview-culture">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                        <li><a href="#">****</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="inc_" data-template="./partials/p_cta.html"></div>
     </div>

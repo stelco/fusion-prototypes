@@ -3,15 +3,19 @@
 .card {
     margin: 2em;
     background-color: #ffffff;
+
     /*nedded for absolute overlay positioning*/
     position: relative;
 }
 
 .card--product {
     height: 510px;
-    width: 320px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+
+    /*required for overlay*/
+    position: relative;
 
     .product__details {
         flex-grow: 1;
@@ -27,6 +31,11 @@
             margin: 10px;
         }
     }
+}
+
+/*temp*/
+.card--product.fixed {
+    width: 420px;
 }
 
 .card--product.full__bleed {
@@ -56,6 +65,7 @@
 .card__image {
     /*image and properties inline*/
     height: 510px;
+
     /*width: 363px; */
     display: flex;
     align-items: flex-end;
@@ -77,7 +87,7 @@
     flex-grow: 1;
     justify-content: space-between;
     align-self: flex-end;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
     z-index: 11;
 
     .product--right-arrow {
@@ -204,13 +214,16 @@
 .card__content {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 1.5em 0.5em 1.5em;
+    padding: 1.5em;
     text-align: left;
     flex-wrap: wrap;
     background-color: #fff;
     min-height: 290px;
-    padding-bottom: 25px;
     width: 100%;
+}
+
+.card__content.no-min-height {
+    min-height: auto;
 }
 
 .card__content.full__bleed {
@@ -221,7 +234,36 @@
 .card__content.clip-path {
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-    margin-top: -30px;
+    margin-top: -15px;
+    padding-bottom: 40px;
+}
+
+/*2 column / split column into 2 rows*/
+
+.columns-equal {
+    height: 520px;
+}
+
+.col-bordered {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 50%;
+}
+
+.col-bordered div {
+    flex: 1;
+}
+
+.row-acc-1 {
+    background-color: #ccc;
+}
+
+.row-acc-2 {
+    background-color: #ddd;
+}
+
+.col-bordered {
+    border: 2px solid black;
 }
 
 /*badges*/

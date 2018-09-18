@@ -1,3 +1,7 @@
+.container {
+    margin: 5em auto;
+}
+
 /*Hero*/
 .hero__image {
     /*image and properties inline*/
@@ -113,8 +117,6 @@
 }
 
 .dest--intro-content {
-    padding: 0 4em;
-
     > p > a {
         color: #bf8eff;
     }
@@ -124,51 +126,66 @@
     }
 }
 
-.dest--overview-accordian {
-    padding-bottom: 4em;
+.container--heading {
+    font-family: 'Gibson-SemiBold';
 
-    .panel-heading {
-        padding: 0.5em 0;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #909090;
-        cursor: pointer;
-
-        a {
-            color: #fff;
-        }
-
-        a:before {
-            font-family: 'Font Awesome 5 Pro';
-            content: "\f078";
-            float: right;
-            transition: all 0.5s;
-        }
-
-        .active a:before {
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            transform: rotate(180deg);
-        }
-
-        h5 {
-            font-family: 'Gibson-SemiBold';
-            color: #fff;
-        }
+    > div:nth-child(1) {
+        flex-basis: 75%;
     }
+
+    > div:nth-child(2) {
+        flex-grow: 1;
+        text-align: right;
+        align-self: flex-end;
+    }
+
+    h3 {
+        font-family: 'Gibson-SemiBold';
+    }
+
+    .fa-arrow-right {
+        margin-left: 10px;
+        color: #5FDFC1;
+    }
+}
+
+.panel-heading {
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+
+.panel-body {
+    padding: 1em;
+}
+
+.panel-title > a, .panel-title > a:active {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-decoration: none;
+}
+
+.panel-heading a:before {
+    font-family: 'Font Awesome 5 Pro';
+    content: "\f078";
+    float: right;
+    transition: all 0.5s;
+}
+
+.panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .dest--overview-accordian .panel-heading.active a:before {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
-}
-
-/*temp - removed fixed proportions*/
-.container.carousel .card--product {
-    width: 100%;
-    height: 420px;
-}
-.container.area--overview .card--product {
-    width: 100%;
-    height: auto;
 }
