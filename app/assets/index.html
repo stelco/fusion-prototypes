@@ -17,29 +17,35 @@
   <div class="container-fluid proto-template px-0">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Header</a>
+          <a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Header</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Footer</a>
+          <a class="nav-link" id="subheader-tab" data-toggle="tab" href="#subheader" role="tab" aria-controls="subheader" aria-selected="true">Sub-Header</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="false">Destinations (Overview)</a>
+          <a class="nav-link" id="footer-tab" data-toggle="tab" href="#footer" role="tab" aria-controls="footer" aria-selected="false">Footer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="hero-tab" data-toggle="tab" href="#hero" role="tab" aria-controls="hero" aria-selected="false">Hero</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Product Cards</a>
+          <a class="nav-link" id="productcards-tab2" data-toggle="tab" href="#productcards" role="tab" aria-controls="productcards" aria-selected="false">Product Cards</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="tab-pane fade" id="header" role="tabpanel" aria-labelledby="header-tab">
           <div class="inc_" data-template="./partials/p_header.html"></div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="tab-pane fade show active" id="subheader" role="tabpanel" aria-labelledby="subheader-tab">
+          <div class="inc_" data-template="./partials/p_sub_header.html"></div>
+        </div>
+        <div class="tab-pane fade" id="footer" role="tabpanel" aria-labelledby="footer-tab">
           <div class="inc_" data-template="./partials/p_footer.html"></div>
         </div>
-        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-          <div class="inc_" data-template="./partials/p_overview.html"></div>
+        <div class="tab-pane fade" id="hero" role="tabpanel" aria-labelledby="hero-tab">
+          <div class="inc_" data-template="./partials/p_hero.html"></div>
         </div>
-        <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
+        <div class="tab-pane fade" id="productcards" role="tabpanel" aria-labelledby="productcards-tab">
           <div class="inc_" data-template="./partials/p_productcards.html"></div>
         </div>
     </div>

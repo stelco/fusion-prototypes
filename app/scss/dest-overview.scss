@@ -11,14 +11,12 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    border: 1px solid red;
 
     .hero__content {
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        border: 1px solid green;
         z-index: 11;
     }
 
@@ -35,6 +33,7 @@
             vertical-align: middle;
             line-height: 0.125em;
         }
+
     }
 
     .product--title {
@@ -59,6 +58,11 @@
     .fa-arrow-right {
         padding-left: 15px;
     }
+}
+
+.hero__image .btn {
+    padding: 1.5em;
+    border-radius: 40px;
 }
 
 .hero__image:after {
@@ -111,8 +115,8 @@
     }
 
     .btn {
-        border-radius: 20px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 15px;
     }
 }
 
@@ -123,6 +127,10 @@
 
     p {
         line-height: 24px;
+    }
+    .fal {
+        color: #5FDFC1;
+        margin-bottom: 10px;
     }
 }
 

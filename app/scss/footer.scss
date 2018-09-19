@@ -18,6 +18,7 @@
   -webkit-background-size: cover;
   background-size: cover;
   padding: 2em;
+  text-align: center;
   .copy {
       @media (max-width: 992px) {
           text-align: center;
@@ -25,7 +26,6 @@
   }
   @media (min-width: 769px) {
     background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
-    padding: 8em 0 0 0;
   }
   @media (min-width: 992px) {
     background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
@@ -49,7 +49,8 @@
 
 /*USP bar*/
     #footer .promo__usp {
-        padding: 10em 0 2em 0;
+        text-align: left;
+        padding-top: 3em;
         
         .usp--img {
         float: left;
@@ -63,7 +64,8 @@
 
 /*Award Creds*/
     #footer .awards__creds {
-        padding: 4em 0;
+        margin: 0 auto;
+        padding: 2em 0;
 		border: 1px solid #979797;
         border-width: 1px 0 1px 0;
         img {
@@ -85,8 +87,8 @@
             
 /*Links & Social*/
 #footer .links__social {
+    margin: 4em auto;
 
-    padding: 3em 0 0 0;
     ul {
         list-style: none;
         padding: 0;
@@ -112,9 +114,7 @@
         width: 100%;
     }
     .panel-heading {
-        padding: 1em;
         margin-bottom: 20px;
-        background-color: #3b3b3b;
     }
 }
 #footer .links__social .desktop {

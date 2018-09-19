@@ -130,7 +130,8 @@
 		}
 		p {
 			color: #fff;
-			line-height: 2em;
+            line-height: 1.5em;
+            font-size: 1.65em;
 		}
 		@media (max-width: 767px) {
 			display: none;
@@ -303,7 +304,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    flex: 1;
+    flex-basis: 80%;
+    flex-grow: 0;
     background-color: #121212;
     height: 70px;
 
@@ -337,7 +339,6 @@
     text-align: center;
     text-decoration: none;
     height: inherit;
-    background-color: #181818;
     cursor: pointer;
 
     @media (max-width: 767px) {
@@ -348,7 +349,6 @@
         -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
         flex-shrink: 0;
-        border: 1px red;
     }
 
     @media (max-width: 991px) {
@@ -425,4 +425,12 @@
 .nav-holiday-search img {
     padding-left: 6px;
     height: 16px;
+}
+
+.sub-nav {
+    background-color: #121212;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: 60%;
 }
