@@ -25,23 +25,32 @@
         flex-direction: row;
         z-index: 11;
         text-align: left;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
         .product--label .fal {
             margin: 0 10px;
             font-size: 0.8em;
         }
 
-        div:nth-child(2) {
+        .header--ctas {
             flex-grow: 1;
             text-align: right;
+            @media (max-width: 768px) {
+                text-align: center;
+                margin-top: 30px;
+            }
         }
         .btn {
-            padding: 0.3em 0.6em;
+            padding: 0.8em;
             border-radius: 40px;
             .fal {
                 margin-right:10px;
             }
             img {
-                width: 25px;
+                width: 23px;
                 border-radius: 20px;
                 margin-right: 10px;
             }
@@ -118,6 +127,10 @@
     text-align: center;
     height: fit-content;
 
+    @media (max-width: 768px){
+        display: none;
+    }
+
     h5 {
         font-family: 'Gibson-SemiBold';
         color: #000;
@@ -153,6 +166,9 @@
 }
 
 .dest--intro-content {
+    @media (min-width: 768px) {
+        flex-basis: 90%;
+    }
     > p > a {
         color: #bf8eff;
     }
@@ -161,20 +177,14 @@
         line-height: 24px;
     }
     .fal {
-        color: #5FDFC1;
         margin-bottom: 10px;
     }
 }
 
 .container--heading {
     font-family: 'Gibson-SemiBold';
-
-    > div:nth-child(1) {
-        flex-basis: 75%;
-    }
-
+    
     > div:nth-child(2) {
-        flex-grow: 1;
         text-align: right;
         align-self: flex-end;
     }
@@ -204,11 +214,9 @@
     padding: 15px;
     color: #fff;
     font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    word-spacing: 3px;
     text-decoration: none;
+    font-family: 'Gibson-SemiBold';
 }
 
 .panel-heading a:before {
@@ -216,6 +224,7 @@
     content: "\f078";
     float: right;
     transition: all 0.5s;
+    padding: 0 0.3em;
 }
 
 .panel-heading.active a:before {

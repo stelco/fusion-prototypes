@@ -2,179 +2,188 @@
 .container-fluid.feefo {
     background-color: #fff;
     text-align: center;
+
     feefowidget-container-carousel .feefowidget-standard.feefowidget-border {
         border: none;
     }
 }
 
-#footer {
-    background-color: #181818;
+.hero__image {
+    /*image and properties inline*/
+    height: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .hero__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        z-index: 11;
+    }
 }
 
 /*Promo Img*/
-#footer .img__block {
-  background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  background-size: cover;
-  padding: 2em;
-  text-align: center;
-  .copy {
-      @media (max-width: 992px) {
-          text-align: center;
-      }
-  }
-  @media (min-width: 769px) {
-    background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
-  }
-  @media (min-width: 992px) {
-    background-image: url("https://images.pexels.com/photos/827058/pexels-photo-827058.jpeg?auto=compress&cs=tinysrgb&h=350");
-    background-attachment: fixed;
-  }
-}
-
-  #footer .img__block:after {
-    content: '';
-    position: absolute;
+.footer__top {
+    height: auto;
     width: 100%;
-    height: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#711BE0), to(#5fdfc1));
-    background-image: -webkit-linear-gradient(left, #711BE0 0%, #5fdfc1 100%);
-    background-image: -o-linear-gradient(left, #711BE0 0%, #5fdfc1 100%);
-    background-image: linear-gradient(90deg, #711BE0 0%, #5fdfc1 100%);
-    mix-blend-mode: overlay;
-    opacity: .5;
-    pointer-events: none;
-    z-index: -1; }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 
-/*USP bar*/
-    #footer .promo__usp {
+    /*USP bar*/
+    .promo__usp {
         text-align: left;
         padding-top: 3em;
-        
+
         .usp--img {
-        float: left;
-        height: 100%;
-        padding-right: 15px; }
+            float: left;
+            height: 100%;
+            padding-right: 15px;
+        }
 
         div > div {
             margin-bottom: 20px;
         }
     }
+}
 
 /*Award Creds*/
-    #footer .awards__creds {
-        margin: 0 auto;
+.footer__bottom {
+    /*Links & Social*/
+    .links__social {
+        margin: 4em auto;
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul > li {
+            padding: 0.6em 0;
+        }
+
+        .btn {
+            border-radius: 0;
+        }
+
+        input {
+            height: 37px;
+            width: 75%;
+        }
+    }
+
+    /*use collapse on mobile*/
+    .links__social .mobile {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+
+            /*         padding: 2em; */
+            width: 100%;
+        }
+
+        .panel-heading {
+            margin-bottom: 20px;
+        }
+    }
+
+    .links__social .desktop {
+        display: block;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .links__social .panel-heading a:before {
+        font-family: 'Font Awesome 5 Pro';
+        content: "\f078";
+        float: right;
+        transition: all 0.5s;
+    }
+
+    .links__social .panel-heading.active a:before {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    /*Social Media*/
+    .social__media {
         padding: 2em 0;
-		border: 1px solid #979797;
-        border-width: 1px 0 1px 0;
-        img {
-            opacity: 0.6;
-        }
-        @media(max-width: 992px) {
-            text-align: center;
-            padding: 20px;
-        }
-        
-        div:nth-child(2) > img {
-            float: right;
-            @media(max-width: 768px) {
-                float: none;
-                margin-top: 20px;
-            }
-        }
-    }
-            
-/*Links & Social*/
-#footer .links__social {
-    margin: 4em auto;
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    ul > li {
-        padding: 0.6em 0;
-    }
-    .btn {
-        border-radius: 0;
-    }
-    input {
-        height: 37px;
-        width: 75%;
-    }
-}
-
-/*use collapse on mobile*/
-#footer .links__social .mobile {
-    display: none;
-    @media(max-width: 768px) {
-        display:block;
-/*         padding: 2em; */
-        width: 100%;
-    }
-    .panel-heading {
-        margin-bottom: 20px;
-    }
-}
-#footer .links__social .desktop {
-    display: block;
-    @media(max-width: 768px) {
-        display:none;
-    }
-}
-
-#footer .links__social .panel-heading a:before {
-    font-family: 'Font Awesome 5 Pro';
-    content: "\f078";
-    float: right;
-    transition: all 0.5s;
- }
- #footer .links__social .panel-heading.active a:before {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-} 
-
-/*Social Media*/
-    #footer .social__media 
-    {
-    padding: 4em 0;
 
         img {
             float: left;
             padding: 0 10px 10px 0;
-            height: 45px;
+            height: 55px;
+
             @media (max-width: 992px) {
                 float: none;
             }
         }
+
         h4 {
             text-transform: uppercase;
             font-family: 'Gibson-SemiBold';
             font-size: 1em;
         }
+
         @media (max-width: 992px) {
             flex-wrap: nowrap;
             text-align: center;
         }
     }
 
-/*Travel Aware*/
-#footer .travel__aware {
-    padding: 2em 0;
-    text-align: left;
-    @media (max-width: 768px) {
-        text-align: center;
-        flex-wrap: nowrap;
-        padding: 2em;       
-    }
-    img {
-        width: 96px;
-        max-width: 100%;;
-        margin-bottom: 20px;
-    }
-    p {
+    /*Travel Aware*/
+    .travel__aware {
+        padding: 2em 0;
         text-align: left;
+
+        @media (max-width: 768px) {
+            text-align: center;
+            flex-wrap: nowrap;
+            padding: 2em;
+        }
+
+        img {
+            width: 96px;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
     }
+
+    .awards__creds {
+        margin: 0 auto;
+        padding: 2em 0;
+        border: 1px solid #979797;
+        border-width: 1px 0 1px 0;
+
+        img {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 992px) {
+            text-align: center;
+            padding: 20px;
+        }
+
+        div:nth-child(2) > img {
+            float: right;
+
+            @media (max-width: 768px) {
+                float: none;
+                margin-top: 20px;
+            }
+        }
     }
+}
