@@ -25,11 +25,13 @@
         flex-direction: row;
         z-index: 11;
         text-align: left;
+
         @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
+
         .product--label .fal {
             margin: 0 10px;
             font-size: 0.8em;
@@ -38,17 +40,21 @@
         .header--ctas {
             flex-grow: 1;
             text-align: right;
+
             @media (max-width: 768px) {
                 text-align: center;
                 margin-top: 30px;
             }
         }
+
         .btn {
             padding: 0.8em;
             border-radius: 40px;
+
             .fal {
-                margin-right:10px;
+                margin-right: 10px;
             }
+
             img {
                 width: 23px;
                 border-radius: 20px;
@@ -70,7 +76,6 @@
             vertical-align: middle;
             line-height: 0.125em;
         }
-
     }
 
     .product--title {
@@ -127,7 +132,7 @@
     text-align: center;
     height: fit-content;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         display: none;
     }
 
@@ -166,9 +171,18 @@
 }
 
 .dest--intro-content {
+    #more {
+        display: none;
+    }
+
+    #myBtn {
+        color: #bf8eff;
+    }
+
     @media (min-width: 768px) {
         flex-basis: 90%;
     }
+
     > p > a {
         color: #bf8eff;
     }
@@ -176,6 +190,7 @@
     p {
         line-height: 24px;
     }
+
     .fal {
         margin-bottom: 10px;
     }
@@ -183,7 +198,7 @@
 
 .container--heading {
     font-family: 'Gibson-SemiBold';
-    
+
     > div:nth-child(2) {
         text-align: right;
         align-self: flex-end;
@@ -203,6 +218,9 @@
     padding: 0;
     border: 0;
     border-bottom: 1px solid #999;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .panel-body {

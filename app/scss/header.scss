@@ -356,6 +356,10 @@
     }
 }
 
+.main-nav-link.active {
+    border-bottom: 2px solid #711be0;
+}
+
 .main-nav-link.dropdown {
     color: #fff;
     cursor: pointer;

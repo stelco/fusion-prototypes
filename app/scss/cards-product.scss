@@ -28,9 +28,13 @@
     }
 
     .product__footer {
-        color: #828282;
+        color: #fff;
         align-items: center;
         align-self: flex-end;
+
+        .product--offer-price {
+            color: #212529;
+        }
 
         i.fal {
             margin: 10px;
@@ -46,6 +50,7 @@
 /*use this on cards with a lot of product details*/
 .card--product.large--card {
     height: 520px;
+
     .card__image {
         height: 50%;
     }
@@ -68,15 +73,67 @@
 }
 
 /*mobile*/
-
 .card--product-mobile {
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+}
+
+/*desktop*/
+.card--product-desktop {
+    @media (min-width: 768px) {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.card--product-popular {
+
     img {
         border-radius: 50%;
         height: 50px;
         margin-right: 10px;
     }
+
+    a.product__mobile-container:hover {
+        background-color: #111111;
+        cursor: pointer;
+    }
+
+    .product__mobile-details {
+        flex-grow: 1;
+    }
+
     div {
         align-self: center;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fa-arrow-right {
+        margin-left: 10px;
+        color: #5FDFC1;
+    }
+}
+
+.card--product-inspiration {
+    div:last-child(1) {
+        align-self: center;
+    }
+    p {
+        text-align: center;
+        margin-top: 40px;
     }
 }
 
@@ -118,14 +175,6 @@
     }
 }
 
-.white {
-    color: #fff;
-}
-
-.left {
-    text-align: left;
-}
-
 .product--label {
     font-size: 0.75em;
     color: #777;
@@ -151,7 +200,8 @@
 .product--description {
     color: rgba(17, 17, 17, 0.4);
     padding-top: 10px;
-    @media(max-width: 910px){
+
+    @media (max-width: 910px) {
         padding-top: 0;
         font-size: 0.8em;
     }
@@ -265,7 +315,7 @@
 .card__content.clip-path {
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-    margin-top: -20px;
+    margin-top: -30px;
     padding-bottom: 40px;
 }
 

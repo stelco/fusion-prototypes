@@ -68,12 +68,26 @@
         }
 
         .btn {
-            border-radius: 0;
+            border-radius: 0 5px 5px 0;
+            @media (max-width: 768px) {
+                width: 100%;
+                border-radius: 0 0 5px 5px;
+            }
+
+        }
+
+        h3 {
+            font-family: 'Gibson-SemiBold';
         }
 
         input {
             height: 37px;
             width: 75%;
+            border-radius: 5px 0 0 5px;
+            @media (max-width: 768px) {
+                width: 100%;
+                border-radius: 5px 5px 0 0;
+            }
         }
     }
 
@@ -83,8 +97,6 @@
 
         @media (max-width: 768px) {
             display: block;
-
-            /*         padding: 2em; */
             width: 100%;
         }
 
@@ -160,6 +172,7 @@
         p {
             text-align: left;
         }
+
     }
 
     .awards__creds {
@@ -170,6 +183,7 @@
 
         img {
             opacity: 0.6;
+            max-width: 80%;
         }
 
         @media (max-width: 992px) {
@@ -186,4 +200,25 @@
             }
         }
     }
+
+    .travel-aware--mobile {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    .travel-aware--desktop {
+        @media (min-width: 768px) {
+            display: inline-flex;
+        }
+    
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
 }
