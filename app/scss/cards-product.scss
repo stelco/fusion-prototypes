@@ -56,6 +56,33 @@
     }
 }
 
+/*use this on cards with a lot of product details*/
+.card--product.horizontal--card {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex: 1 1 100%;
+
+    .card__image {
+       flex-grow: 1;
+    }
+    .card__content {
+        background-color: transparent;
+        flex-basis: 30%;
+        div {
+            align-self: center;
+            color: #fff;
+            flex-grow: 1;
+        }
+        .product--offers-available {
+            text-align: center;
+            .fa-bell {
+                margin-right: 10px;
+                color: #5FDFC1;
+            }
+        }
+    }
+}
+
 .card--product.full__bleed {
     align-items: inherit;
     flex-direction: column;
@@ -121,10 +148,6 @@
         margin-top: 40px;
     }
 
-    .fa-arrow-right {
-        margin-left: 10px;
-        color: #5FDFC1;
-    }
 }
 
 .card--product-inspiration {
@@ -133,7 +156,7 @@
     }
     p {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 
@@ -193,7 +216,7 @@
     -ms-opacity: 0.9;
     opacity: 0.9;
     font-family: Gibson-SemiBold;
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: #212529;
 }
 
